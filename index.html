@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON</title>
+        <style>
+            body{
+                background-color: orange;
+                font-family: 'Franklin Gothic Medium', 
+                'Arial Narrow', Arial, sans-serif;
+            }
+
+            script{
+                font-style: normal;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Create Your Supervillan!!</h1>
+        <p>Enter details of your Supervillan</p>
+        <label>Name:<input type="text" id="name"></label> <br>
+        <label>Power:<input type="text" id="power"></label> <br>
+        <label>Nemesis:<input type="text" id="nemesis"></label> 
+        <br>
+        <br> 
+        <button onclick="createSupervillan()">Show Villan</button>
+
+        <h3>Your Supervillan JSON</h3>
+        <pre id="output"></pre>
+
+        <script>
+         function createSupervillan() {
+            // Get the values
+            var name = document.getElementById("name").value;
+            var power = document.getElementById("power").value;
+            var age = document.getElementById("nemesis").value;
+
+            // Create the JSON object
+            var supervillan = {
+                name: name,
+                power: power,
+                nemesis: nemesis
+            };
+
+            // Display the JSON
+            document.getElementById("output").textContent = JSON.
+            stringify(supervillan, null, null);
+         }
+        </script>
+    </body>
+</html>
